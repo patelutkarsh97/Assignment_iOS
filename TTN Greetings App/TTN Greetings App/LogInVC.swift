@@ -33,14 +33,14 @@ class LogInVC: UIViewController, ActivityIndicating {
     func emailCheck()
     {
         
-            let valid = emailTextField.emailValidation(email: self.emailTextField.text!)
-            if(valid == false)
-            {
-                emailToastLabel.toast(message: "Incorrect Email..........")
-                flag = flag + 1
-            }
-            else {
-                flag = 0
+        let valid = emailTextField.emailValidation(email: self.emailTextField.text!)
+        if(valid == false)
+        {
+            emailToastLabel.toast(message: "Incorrect Email..........")
+            flag = flag + 1
+        }
+        else {
+            flag = 0
         }
         
         
@@ -58,7 +58,7 @@ class LogInVC: UIViewController, ActivityIndicating {
         }
     }
     @IBAction func onClickLoginButton(_ sender: Any) {
-       showActivityIndicator()
+        showActivityIndicator()
         Timer.scheduledTimer(timeInterval: 3, target: self, selector: #selector(callback), userInfo: nil, repeats: false)
     }
     @objc func callback() {
@@ -66,28 +66,28 @@ class LogInVC: UIViewController, ActivityIndicating {
         if (userArray.isEmpty) {
             toastLabel.toast(message: "SignUp to get access")
         }
-            for i in userArray
+        for i in userArray
+        {
+            if (flag == 0 && emailTextField.text ==  i.email && passwordTextField.text == i.password  )
             {
-                if (flag == 0 && emailTextField.text ==  i.email && passwordTextField.text == i.password  )
-                {
-                    
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let contoller = storyboard.instantiateViewController(withIdentifier: "WelcomePageVC") as? WelcomePageVC
-            contoller?.userType = i
-                    self.navigationController?.pushViewController(contoller!,animated: true)
-                    
-                    loginUser(userName: emailTextField.text!)
-                    let user = UserDefaults.standard.string(forKey: emailTextField.text!)
-                    let alertMessage = "Welcome ! \(user!)"
-                    let alert = UIAlertController(title: nil, message: alertMessage, preferredStyle: .alert)
-                    alert.addAction(UIAlertAction(title: "Go", style: .default, handler: nil))
-                    self.present(alert, animated:  true)
-        }
-                else {
-                    hideActivityIndicator()
-                    toastLabel.toast(message: "Invalid Email-Id or Password")
-                }
                 
+                let storyboard = UIStoryboard(name: "Main", bundle: nil)
+                let contoller = storyboard.instantiateViewController(withIdentifier: "WelcomePageVC") as? WelcomePageVC
+                contoller?.userType = i
+                self.navigationController?.pushViewController(contoller!,animated: true)
+                
+                loginUser(userName: emailTextField.text!)
+                let user = UserDefaults.standard.string(forKey: emailTextField.text!)
+                let alertMessage = "Welcome ! \(user!)"
+                let alert = UIAlertController(title: nil, message: alertMessage, preferredStyle: .alert)
+                alert.addAction(UIAlertAction(title: "Go", style: .default, handler: nil))
+                self.present(alert, animated:  true)
+            }
+            else {
+                hideActivityIndicator()
+                toastLabel.toast(message: "Invalid Email-Id or Password")
+            }
+            
         }
         
     }
@@ -106,9 +106,9 @@ class LogInVC: UIViewController, ActivityIndicating {
         passwordTextField.layer.borderColor = UIColor.black.cgColor
         
     }
-
-  
-
+    
+    
+    
 }
 // MARK: QUESTION 2
 protocol Toasting {
@@ -131,14 +131,14 @@ extension UILabel : Toasting
         UIView.animate(withDuration: 7.0, delay: 0.0, options: .transitionCurlUp, animations: {
             self.alpha = 0.0
         }, completion: {(isCompleted) in
-           // self.isHidden = true
+            // self.isHidden = true
         })
     }
 }
 // MARK : QUESTION 7
 protocol Validating {
-     func emailValidation(email: String) -> Bool
-     func passwordValidation(password: String) -> Bool
+    func emailValidation(email: String) -> Bool
+    func passwordValidation(password: String) -> Bool
 }
 
 extension UITextField : Validating {
@@ -153,7 +153,7 @@ extension UITextField : Validating {
     
     func passwordValidation(password : String) -> Bool
     {
-      let passwordTest = NSPredicate(format: "SELF MATCHES %@", "^(?=.*[a-z])(?=.*[$@$#!%*?&])[A-Za-z\\d$@$#!%*?&]{8,}")
+        let passwordTest = NSPredicate(format: "SELF MATCHES %@", "^(?=.*[a-z])(?=.*[$@$#!%*?&])[A-Za-z\\d$@$#!%*?&]{8,}")
         print(passwordTest)
         print(password)
         return passwordTest.evaluate(with: password)

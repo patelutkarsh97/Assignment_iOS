@@ -9,7 +9,7 @@
 import UIKit
 
 class GreetingVC: UIViewController {
-
+    
     @IBOutlet weak var toastLabel: UILabel!
     @IBOutlet weak var greetingTableView: UITableView!
     override func viewDidLoad() {
@@ -21,7 +21,7 @@ class GreetingVC: UIViewController {
         greetingTableView.reloadData()
     }
     
-
+    
 }
 // MARK: QUESTION 8
 
@@ -31,7 +31,7 @@ extension GreetingVC : UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-         let cell : GreetingTableViewCell =  tableView.dequeueReusableCell(withIdentifier: "greetingTableCell") as! GreetingTableViewCell
+        let cell : GreetingTableViewCell =  tableView.dequeueReusableCell(withIdentifier: "greetingTableCell") as! GreetingTableViewCell
         cell.emailLabel.text = userArray[indexPath.row].email
         cell.nameLabel.text = userArray[indexPath.row].name
         cell.phoneLabel.text = String(userArray[indexPath.row].phone)

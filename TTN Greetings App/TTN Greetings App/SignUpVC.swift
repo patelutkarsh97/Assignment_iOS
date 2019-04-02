@@ -16,7 +16,7 @@ struct UserAccount {
     var password: String
 }
 var userArray = [UserAccount]()
- let indicator = UIActivityIndicatorView(style: .whiteLarge)
+let indicator = UIActivityIndicatorView(style: .whiteLarge)
 class SignUpVC: UIViewController, ActivityIndicating {
     private var datePicker: UIDatePicker?
     @IBOutlet weak var nameTextField: UITextField!
@@ -42,12 +42,15 @@ class SignUpVC: UIViewController, ActivityIndicating {
     }
     
     @IBAction func onClickCreateAccount(_ sender: Any) {
-       showActivityIndicator()
+        passwordTextFieldEditOnEnd(passwordTextField.text as Any)
+        if (flag == 0) {
+        showActivityIndicator()
         Timer.scheduledTimer(timeInterval: 3, target: self, selector: #selector(callback), userInfo: nil, repeats: false)
+        }
     }
-        
+    
     @objc func callback() {
-            print("done")
+        print("done")
         
         if
             (nameTextField.text == "" || phoneTextField.text == "" || emailTextField.text == "" || dobTextField.text == "" || passwordTextField.text == "") {
@@ -62,9 +65,9 @@ class SignUpVC: UIViewController, ActivityIndicating {
             
         }
         hideActivityIndicator()
-            }
+    }
     
-
+    
     func textFieldBorder() {
         createAccountButton.roundButton()
         nameTextField.textFormatting()
@@ -79,8 +82,8 @@ class SignUpVC: UIViewController, ActivityIndicating {
         if(phoneTextField.validationPhone() == false)
         {
             
-                phoneTextField.text = ""
-                toastLabel.toast(message: "Invalid Phone Number")
+            phoneTextField.text = ""
+            toastLabel.toast(message: "Invalid Phone Number")
         }
         
     }
@@ -110,17 +113,17 @@ class SignUpVC: UIViewController, ActivityIndicating {
     
     @IBAction func passwordTextFieldEditOnEnd(_ sender: Any) {
         //passwordTextField.passwordValidation(password: passwordTextField.text!)
-            let valid = passwordTextField.passwordValidation(password: passwordTextField.text!)
-            
-            if(valid == false)
-            {
-                toastLabel.toast(message: "Use strong password......")
-                flag = flag + 1
-            }
-            else {
-                flag = 0
-            }
+        let valid = passwordTextField.passwordValidation(password: passwordTextField.text!)
+        
+        if(valid == false)
+        {
+            toastLabel.toast(message: "Use strong password......")
+            flag = flag + 1
         }
+        else {
+            flag = 0
+        }
+    }
     
     @objc func dateChanged(datePicker: UIDatePicker) {
         let dateFormatter = DateFormatter()
@@ -129,7 +132,7 @@ class SignUpVC: UIViewController, ActivityIndicating {
         dobTextField.text = dateFormatter.string(from: datePicker.date)
         view.endEditing(false)
     }
-    }
+}
 
 
 
@@ -155,7 +158,7 @@ extension UITextField : ErrorViewProtocol
 {
     func validationName() -> Bool {
         let nameRegex = "^[a-zA-Z][a-zA-Z\\s]+$"
-      //  [A-Za-z]{2,}\\s?[A-Za-z]{2,}?\\s?[A-Za-z]{2,}?
+        //  [A-Za-z]{2,}\\s?[A-Za-z]{2,}?\\s?[A-Za-z]{2,}?
         let nameTest = NSPredicate(format: "SELF MATCHES %@", nameRegex)
         let result =  nameTest.evaluate(with: self.text!)
         return result
@@ -183,53 +186,53 @@ extension Date {
 }
 
 // MARK: QUESTION 4
- protocol ActivityIndicating {
+protocol ActivityIndicating {
     func showActivityIndicator()
     func hideActivityIndicator()
 }
 
- extension ActivityIndicating where Self: UIViewController
- {
+extension ActivityIndicating where Self: UIViewController
+{
     func showActivityIndicator() {
-       
+        
         indicator.startAnimating()
         indicator.center = self.view.center
         indicator.backgroundColor = .lightGray
         self.view.addSubview(indicator)
         
     }
-//    func showActivityIndicatory(uiView: UIView) {
-//        var container: UIView = UIView()
-//        container.frame = uiView.frame
-//        container.center = uiView.center
-//        container.backgroundColor = UIColorFromHex(0xffffff, alpha: 0.3)
-//
-//        var loadingView: UIView = UIView()
-//        loadingView.frame = CGRectMake(0, 0, 80, 80)
-//        loadingView.center = uiView.center
-//        loadingView.backgroundColor = UIColorFromHex(0x444444, alpha: 0.7)
-//        loadingView.clipsToBounds = true
-//        loadingView.layer.cornerRadius = 10
-//
-//        var actInd: UIActivityIndicatorView = UIActivityIndicatorView()
-//        actInd.frame = CGRectMake(0.0, 0.0, 40.0, 40.0);
-//        actInd.activityIndicatorViewStyle =
-//            UIActivityIndicatorViewStyle.WhiteLarge
-//        actInd.center = CGPointMake(loadingView.frame.size.width / 2,
-//                                    loadingView.frame.size.height / 2);
-//        loadingView.addSubview(actInd)
-//        container.addSubview(loadingView)
-//        uiView.addSubview(container)
-//        actInd.startAnimating()
-//    }
-//    func showActivityIndicator() {
-//        self.activityIndicator.style = .whiteLarge
-//        self.activityIndicator.frame =  CGRect(x: 160, y: 160, width: 80, height: 80)
-//        self.activityIndicator.center = CGPoint(x: self.view.bounds.size.width / 2, y: self.view.bounds.height / 2)
-//        self.view.addSubview(self.activityIndicator)
-//        self.activityIndicator.startAnimating()
-//    }
-//
+    //    func showActivityIndicatory(uiView: UIView) {
+    //        var container: UIView = UIView()
+    //        container.frame = uiView.frame
+    //        container.center = uiView.center
+    //        container.backgroundColor = UIColorFromHex(0xffffff, alpha: 0.3)
+    //
+    //        var loadingView: UIView = UIView()
+    //        loadingView.frame = CGRectMake(0, 0, 80, 80)
+    //        loadingView.center = uiView.center
+    //        loadingView.backgroundColor = UIColorFromHex(0x444444, alpha: 0.7)
+    //        loadingView.clipsToBounds = true
+    //        loadingView.layer.cornerRadius = 10
+    //
+    //        var actInd: UIActivityIndicatorView = UIActivityIndicatorView()
+    //        actInd.frame = CGRectMake(0.0, 0.0, 40.0, 40.0);
+    //        actInd.activityIndicatorViewStyle =
+    //            UIActivityIndicatorViewStyle.WhiteLarge
+    //        actInd.center = CGPointMake(loadingView.frame.size.width / 2,
+    //                                    loadingView.frame.size.height / 2);
+    //        loadingView.addSubview(actInd)
+    //        container.addSubview(loadingView)
+    //        uiView.addSubview(container)
+    //        actInd.startAnimating()
+    //    }
+    //    func showActivityIndicator() {
+    //        self.activityIndicator.style = .whiteLarge
+    //        self.activityIndicator.frame =  CGRect(x: 160, y: 160, width: 80, height: 80)
+    //        self.activityIndicator.center = CGPoint(x: self.view.bounds.size.width / 2, y: self.view.bounds.height / 2)
+    //        self.view.addSubview(self.activityIndicator)
+    //        self.activityIndicator.startAnimating()
+    //    }
+    //
     func hideActivityIndicator() {
         indicator.stopAnimating()
         indicator.removeFromSuperview()

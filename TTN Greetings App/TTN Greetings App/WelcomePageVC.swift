@@ -9,7 +9,7 @@
 import UIKit
 
 class WelcomePageVC: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate, LoggableProtocol {
-
+    
     @IBOutlet weak var logoutButton: UIButton!
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var userImageView: UIImageView!
@@ -76,7 +76,7 @@ class WelcomePageVC: UIViewController, UIImagePickerControllerDelegate, UINaviga
         picker.dismiss(animated: true, completion: nil)
         tableView.reloadData()
     }
-
+    
 }
 
 extension WelcomePageVC : UITableViewDelegate, UITableViewDataSource {
@@ -85,7 +85,7 @@ extension WelcomePageVC : UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-//        let user = userArray[indexPath.row]
+        //        let user = userArray[indexPath.row]
         let cell : TableCell =  tableView.dequeueReusableCell(withIdentifier: "tableCell") as! TableCell
         cell.userImageView.image = userImageView.image
         cell.userData = userType

@@ -9,13 +9,13 @@
 import UIKit
 
 class TableCell: UITableViewCell {
-
+    
     var userData: UserAccount? {
         didSet {
             nameLabel.text = userData?.name
             dobLabel.text = userData?.dob
             if userData != nil {
-                 let phoneString = String(userData!.phone)
+                let phoneString = String(userData!.phone)
                 phoneLabel.text = phoneString
             }
             emailLabel.text = userData?.email
@@ -31,7 +31,7 @@ class TableCell: UITableViewCell {
         userImageView.imageBorder()
         userImageView.imageRound()
     }
-
+    
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
         // Configure the view for the selected state
