@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="14490.98" systemVersion="18E226" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Fruits" representedClassName="Fruits" syncable="YES" codeGenerationType="class">
+        <attribute name="fruitName" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Vegetables" representedClassName="Vegetables" syncable="YES" codeGenerationType="class">
+        <attribute name="vegName" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Fruits" positionX="-54" positionY="-9" width="128" height="60"/>
+        <element name="Vegetables" positionX="-36" positionY="18" width="128" height="60"/>
+    </elements>
+</model>
