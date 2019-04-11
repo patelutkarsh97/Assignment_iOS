@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="14490.98" systemVersion="18E226" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="MyRecipe" representedClassName="MyRecipe" syncable="YES" codeGenerationType="class">
+        <attribute name="myFav" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="nameOfRecipe" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="originOfRecipe" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="preparationTime" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="recipeIngredient" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="recipeOwner" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="MyRecipe" positionX="-63" positionY="-18" width="128" height="133"/>
+    </elements>
+</model>
