@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="q33-g1-wGC">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--GalleryVC-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="GalleryVC" id="BYZ-38-t0r" customClass="GalleryVC" customModule="iOSAssignment18_20_21_22" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Smx-7e-gFU" customClass="CustomNavBar" customModule="iOSAssignment18_20_21_22" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="44" width="414" height="60"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="VAa-YF-Qao"/>
+                                </constraints>
+                            </view>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="um8-dj-S6p">
+                                <rect key="frame" x="0.0" y="104" width="414" height="758"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="3tE-bR-lH4">
+                                    <size key="itemSize" width="300" height="400"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="10" minY="10" maxX="10" maxY="10"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="um8-dj-S6p" secondAttribute="bottom" id="GIT-N5-Nit"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="um8-dj-S6p" secondAttribute="trailing" id="RAZ-mG-fo3"/>
+                            <constraint firstItem="Smx-7e-gFU" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="eVe-s7-Kb4"/>
+                            <constraint firstItem="um8-dj-S6p" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="idy-Nn-sMp"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Smx-7e-gFU" secondAttribute="trailing" id="oOB-si-6Eu"/>
+                            <constraint firstItem="Smx-7e-gFU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="qy1-Wo-RBU"/>
+                            <constraint firstItem="um8-dj-S6p" firstAttribute="top" secondItem="Smx-7e-gFU" secondAttribute="bottom" id="ud4-b6-4cb"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="ve9-Un-F5K"/>
+                    <connections>
+                        <outlet property="collectionView" destination="um8-dj-S6p" id="Q1k-Ji-VYk"/>
+                        <outlet property="customNavBar" destination="Smx-7e-gFU" id="u4O-a4-HzK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-133" y="-7"/>
+        </scene>
+        <!--Next WindowVC-->
+        <scene sceneID="4zQ-HS-eaM">
+            <objects>
+                <viewController storyboardIdentifier="nextWindowVC" id="Mmf-de-Xh8" customClass="nextWindowVC" customModule="iOSAssignment18_20_21_22" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9Cb-Nw-laK">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pNs-Hc-7c3" customClass="CustomNavBar" customModule="iOSAssignment18_20_21_22" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="44" width="414" height="60"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="vWR-r9-UT4"/>
+                                </constraints>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="8QS-zD-8Ut">
+                                <rect key="frame" x="0.0" y="802" width="414" height="60"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vL2-PM-rdg" customClass="RoundRectButton" customModule="iOSAssignment18_20_21_22" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="207" height="60"/>
+                                        <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="20"/>
+                                        <state key="normal" title="Download" image="Download">
+                                            <color key="titleColor" red="0.31476378440000002" green="0.33661407230000001" blue="0.37185621260000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="onClickDownload:" destination="Mmf-de-Xh8" eventType="touchUpInside" id="EsX-aM-GBx"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NaQ-dP-Cco" customClass="RoundRectButton" customModule="iOSAssignment18_20_21_22" customModuleProvider="target">
+                                        <rect key="frame" x="207" y="0.0" width="207" height="60"/>
+                                        <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="20"/>
+                                        <inset key="titleEdgeInsets" minX="30" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <inset key="imageEdgeInsets" minX="10" minY="4" maxX="0.0" maxY="4"/>
+                                        <state key="normal" title="Author" image="people">
+                                            <color key="titleColor" red="0.31476378440000002" green="0.33661407230000001" blue="0.37185621260000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="onClickAuthor:" destination="Mmf-de-Xh8" eventType="touchUpInside" id="TqR-8X-uCg"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="lM5-y8-vyo"/>
+                                </constraints>
+                            </stackView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="pGE-UA-VGA">
+                                <rect key="frame" x="0.0" y="104" width="414" height="698"/>
+                            </imageView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="Xss-li-dTv">
+                                <rect key="frame" x="197" y="438" width="20" height="20"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="ZPw-1Y-caK" firstAttribute="trailing" secondItem="8QS-zD-8Ut" secondAttribute="trailing" id="Dp1-gx-0Wr"/>
+                            <constraint firstItem="Xss-li-dTv" firstAttribute="centerX" secondItem="pGE-UA-VGA" secondAttribute="centerX" id="EgW-0B-Fse"/>
+                            <constraint firstItem="pNs-Hc-7c3" firstAttribute="top" secondItem="ZPw-1Y-caK" secondAttribute="top" id="LAb-Ou-DcE"/>
+                            <constraint firstItem="ZPw-1Y-caK" firstAttribute="bottom" secondItem="8QS-zD-8Ut" secondAttribute="bottom" id="PIb-WH-YY9"/>
+                            <constraint firstItem="pNs-Hc-7c3" firstAttribute="trailing" secondItem="ZPw-1Y-caK" secondAttribute="trailing" id="RXg-21-Wo8"/>
+                            <constraint firstItem="ZPw-1Y-caK" firstAttribute="trailing" secondItem="pGE-UA-VGA" secondAttribute="trailing" id="aN7-MH-uBI"/>
+                            <constraint firstItem="8QS-zD-8Ut" firstAttribute="leading" secondItem="ZPw-1Y-caK" secondAttribute="leading" id="bIw-jY-697"/>
+                            <constraint firstItem="pNs-Hc-7c3" firstAttribute="leading" secondItem="ZPw-1Y-caK" secondAttribute="leading" id="bZv-Ja-dxb"/>
+                            <constraint firstItem="8QS-zD-8Ut" firstAttribute="top" secondItem="pGE-UA-VGA" secondAttribute="bottom" id="cjB-2p-cmy"/>
+                            <constraint firstItem="pGE-UA-VGA" firstAttribute="leading" secondItem="ZPw-1Y-caK" secondAttribute="leading" id="e82-Rm-1ZA"/>
+                            <constraint firstItem="pGE-UA-VGA" firstAttribute="top" secondItem="pNs-Hc-7c3" secondAttribute="bottom" id="hsD-Au-y22"/>
+                            <constraint firstItem="Xss-li-dTv" firstAttribute="centerY" secondItem="9Cb-Nw-laK" secondAttribute="centerY" id="qNE-dC-wXV"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ZPw-1Y-caK"/>
+                    </view>
+                    <connections>
+                        <outlet property="activityIndicator" destination="Xss-li-dTv" id="peX-vy-5kq"/>
+                        <outlet property="authorButton" destination="NaQ-dP-Cco" id="9pO-qu-h8R"/>
+                        <outlet property="customNavBar" destination="pNs-Hc-7c3" id="Go1-rK-UbK"/>
+                        <outlet property="downloadButton" destination="vL2-PM-rdg" id="upn-nI-mbG"/>
+                        <outlet property="largeImageView" destination="pGE-UA-VGA" id="0qV-eb-ozL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YGU-Cj-Sph" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="549" y="-8"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="SvB-Ik-cvf">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="q33-g1-wGC" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="0C1-KW-bAi">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="F7h-41-r6t"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cZa-r1-PbC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-828" y="-7"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Download" width="64" height="64"/>
+        <image name="people" width="64" height="64"/>
+    </resources>
+</document>

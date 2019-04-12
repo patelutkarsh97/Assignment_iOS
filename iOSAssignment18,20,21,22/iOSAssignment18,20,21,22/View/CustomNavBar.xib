@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CustomNavBar" customModule="iOSAssignment18_20_21_22" customModuleProvider="target">
+            <connections>
+                <outlet property="backButton" destination="4a1-fe-fIu" id="1Zg-37-rVs"/>
+                <outlet property="exitButton" destination="ZJf-wa-tzD" id="HE7-SI-mEc"/>
+                <outlet property="galleryButton" destination="wrn-R3-liW" id="KqS-WY-CiY"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="60"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4a1-fe-fIu">
+                    <rect key="frame" x="0.0" y="0.0" width="70" height="60"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="70" id="MMW-PJ-zTb"/>
+                    </constraints>
+                    <state key="normal" title="Button" image="back"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZJf-wa-tzD">
+                    <rect key="frame" x="344" y="0.0" width="70" height="60"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="70" id="2J7-0d-aaP"/>
+                    </constraints>
+                    <state key="normal" title="Button" image="logout"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wrn-R3-liW">
+                    <rect key="frame" x="70" y="0.0" width="274" height="60"/>
+                    <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="36"/>
+                    <state key="normal" title="Gallery">
+                        <color key="titleColor" red="0.31476378440856934" green="0.33661407232284546" blue="0.3718562126159668" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="ZJf-wa-tzD" secondAttribute="bottom" id="2Da-FX-F5Z"/>
+                <constraint firstItem="wrn-R3-liW" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="DtL-ko-oxY"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="ZJf-wa-tzD" secondAttribute="trailing" id="EG6-TY-lqU"/>
+                <constraint firstItem="4a1-fe-fIu" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="GbB-8X-3iL"/>
+                <constraint firstItem="4a1-fe-fIu" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="Vbf-Zf-bJ4"/>
+                <constraint firstAttribute="bottom" secondItem="wrn-R3-liW" secondAttribute="bottom" id="fO2-vL-KMh"/>
+                <constraint firstItem="ZJf-wa-tzD" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="kl6-lb-E6d"/>
+                <constraint firstItem="wrn-R3-liW" firstAttribute="leading" secondItem="4a1-fe-fIu" secondAttribute="trailing" id="lU3-lh-CM0"/>
+                <constraint firstItem="ZJf-wa-tzD" firstAttribute="leading" secondItem="wrn-R3-liW" secondAttribute="trailing" id="n0Z-xt-HKo"/>
+                <constraint firstAttribute="bottom" secondItem="4a1-fe-fIu" secondAttribute="bottom" id="smJ-9V-MEx"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="back" width="64" height="64"/>
+        <image name="logout" width="64" height="64"/>
+    </resources>
+</document>

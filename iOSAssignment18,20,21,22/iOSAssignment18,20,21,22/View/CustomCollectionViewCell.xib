@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="collectionCell" id="gTV-IL-0wX" customClass="CustomCollectionViewCell" customModule="iOSAssignment18_20_21_22" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="203" height="200"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="203" height="200"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="lsB-jF-JZM">
+                        <rect key="frame" x="0.0" y="0.0" width="203" height="200"/>
+                    </imageView>
+                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WIp-o4-QrJ">
+                        <rect key="frame" x="0.0" y="168" width="203" height="32"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="1000" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kdB-AQ-yOR">
+                                <rect key="frame" x="0.0" y="0.0" width="32" height="32"/>
+                                <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="0.75470890410958902" colorSpace="custom" customColorSpace="sRGB"/>
+                                <inset key="imageEdgeInsets" minX="3" minY="0.0" maxX="0.0" maxY="3"/>
+                                <state key="normal" image="play-button"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loading...." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="evy-ns-vFv">
+                                <rect key="frame" x="32" y="0.0" width="171" height="32"/>
+                                <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="0.75" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </stackView>
+                    <activityIndicatorView opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="szJ-yc-kKh">
+                        <rect key="frame" x="91.5" y="90" width="20" height="20"/>
+                    </activityIndicatorView>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="WIp-o4-QrJ" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="3rv-2F-bjA"/>
+                <constraint firstAttribute="trailing" secondItem="WIp-o4-QrJ" secondAttribute="trailing" id="5Bn-bX-ueq"/>
+                <constraint firstAttribute="trailing" secondItem="lsB-jF-JZM" secondAttribute="trailing" id="A7v-vq-5yx"/>
+                <constraint firstItem="szJ-yc-kKh" firstAttribute="centerX" secondItem="lsB-jF-JZM" secondAttribute="centerX" id="CKI-6H-CO9"/>
+                <constraint firstItem="lsB-jF-JZM" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="TKc-LM-ues"/>
+                <constraint firstAttribute="bottom" secondItem="WIp-o4-QrJ" secondAttribute="bottom" id="Z2a-X8-xi7"/>
+                <constraint firstItem="lsB-jF-JZM" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="mPt-KN-eQO"/>
+                <constraint firstItem="szJ-yc-kKh" firstAttribute="centerY" secondItem="lsB-jF-JZM" secondAttribute="centerY" id="svi-xd-z46"/>
+                <constraint firstAttribute="bottom" secondItem="lsB-jF-JZM" secondAttribute="bottom" id="tPB-rh-yp6"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="203" height="200"/>
+            <connections>
+                <outlet property="activityIndicator" destination="szJ-yc-kKh" id="8ta-XO-YTo"/>
+                <outlet property="imageView" destination="lsB-jF-JZM" id="4eX-kd-eLF"/>
+                <outlet property="loadingLabel" destination="evy-ns-vFv" id="6kB-cj-hzv"/>
+                <outlet property="playButton" destination="kdB-AQ-yOR" id="Dys-eL-gvP"/>
+            </connections>
+            <point key="canvasLocation" x="78.985507246376812" y="38.839285714285715"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="play-button" width="32" height="32"/>
+    </resources>
+</document>
