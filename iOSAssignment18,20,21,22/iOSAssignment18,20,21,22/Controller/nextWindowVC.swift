@@ -10,6 +10,7 @@ import UIKit
 
 class nextWindowVC: UIViewController {
 
+    @IBOutlet weak var toastLabel: UILabel!
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     @IBOutlet weak var downloadButton: UIButton!
     @IBOutlet weak var authorButton: UIButton!
@@ -20,16 +21,17 @@ class nextWindowVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-         addActions()
+         performActions()
 
     }
     @IBAction func onClickDownload(_ sender: Any) {
+         toastLabel.toast(message: "Image is downloading")
     }
     @IBAction func onClickAuthor(_ sender: Any) {
          UIApplication.shared.open(authorURL!, options: [:], completionHandler: nil)
     }
     
-    private func addActions() {
+    private func performActions() {
         customNavBar.backButton.addTarget(self, action: #selector(self.onClickBackButton), for: .touchUpInside)
         
         customNavBar.galleryButton.addTarget(self, action: #selector(self.onClickGalleryButton), for: .touchUpInside)
@@ -48,5 +50,6 @@ class nextWindowVC: UIViewController {
     
     @objc func onClickExitButton() {
        //  Logout Functionality is not given in Question.
+        toastLabel.toast(message: "This Functionality is not available at this moment")
     }
 }

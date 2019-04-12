@@ -83,11 +83,17 @@
                                         <state key="normal" title="Download" image="Download">
                                             <color key="titleColor" red="0.31476378440000002" green="0.33661407230000001" blue="0.37185621260000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
+                                        <variation key="heightClass=regular-widthClass=compact">
+                                            <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="16"/>
+                                        </variation>
+                                        <variation key="heightClass=regular-widthClass=regular">
+                                            <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="40"/>
+                                        </variation>
                                         <connections>
                                             <action selector="onClickDownload:" destination="Mmf-de-Xh8" eventType="touchUpInside" id="EsX-aM-GBx"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NaQ-dP-Cco" customClass="RoundRectButton" customModule="iOSAssignment18_20_21_22" customModuleProvider="target">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NaQ-dP-Cco" customClass="RoundRectButton" customModule="iOSAssignment18_20_21_22" customModuleProvider="target">
                                         <rect key="frame" x="207" y="0.0" width="207" height="60"/>
                                         <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="20"/>
                                         <inset key="titleEdgeInsets" minX="30" minY="0.0" maxX="0.0" maxY="0.0"/>
@@ -95,6 +101,12 @@
                                         <state key="normal" title="Author" image="people">
                                             <color key="titleColor" red="0.31476378440000002" green="0.33661407230000001" blue="0.37185621260000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
+                                        <variation key="heightClass=regular-widthClass=compact">
+                                            <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="16"/>
+                                        </variation>
+                                        <variation key="heightClass=regular-widthClass=regular">
+                                            <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="40"/>
+                                        </variation>
                                         <connections>
                                             <action selector="onClickAuthor:" destination="Mmf-de-Xh8" eventType="touchUpInside" id="TqR-8X-uCg"/>
                                         </connections>
@@ -110,20 +122,30 @@
                             <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="Xss-li-dTv">
                                 <rect key="frame" x="197" y="438" width="20" height="20"/>
                             </activityIndicatorView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AvF-Ci-CeV">
+                                <rect key="frame" x="0.0" y="448" width="414" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="ZPw-1Y-caK" firstAttribute="trailing" secondItem="8QS-zD-8Ut" secondAttribute="trailing" id="Dp1-gx-0Wr"/>
                             <constraint firstItem="Xss-li-dTv" firstAttribute="centerX" secondItem="pGE-UA-VGA" secondAttribute="centerX" id="EgW-0B-Fse"/>
                             <constraint firstItem="pNs-Hc-7c3" firstAttribute="top" secondItem="ZPw-1Y-caK" secondAttribute="top" id="LAb-Ou-DcE"/>
+                            <constraint firstItem="AvF-Ci-CeV" firstAttribute="centerY" secondItem="9Cb-Nw-laK" secondAttribute="centerY" id="O7n-Hz-vTS"/>
                             <constraint firstItem="ZPw-1Y-caK" firstAttribute="bottom" secondItem="8QS-zD-8Ut" secondAttribute="bottom" id="PIb-WH-YY9"/>
+                            <constraint firstItem="AvF-Ci-CeV" firstAttribute="trailing" secondItem="pGE-UA-VGA" secondAttribute="trailing" id="QP1-uF-OQg"/>
                             <constraint firstItem="pNs-Hc-7c3" firstAttribute="trailing" secondItem="ZPw-1Y-caK" secondAttribute="trailing" id="RXg-21-Wo8"/>
+                            <constraint firstItem="AvF-Ci-CeV" firstAttribute="leading" secondItem="pGE-UA-VGA" secondAttribute="leading" id="SUY-py-gjQ"/>
                             <constraint firstItem="ZPw-1Y-caK" firstAttribute="trailing" secondItem="pGE-UA-VGA" secondAttribute="trailing" id="aN7-MH-uBI"/>
                             <constraint firstItem="8QS-zD-8Ut" firstAttribute="leading" secondItem="ZPw-1Y-caK" secondAttribute="leading" id="bIw-jY-697"/>
                             <constraint firstItem="pNs-Hc-7c3" firstAttribute="leading" secondItem="ZPw-1Y-caK" secondAttribute="leading" id="bZv-Ja-dxb"/>
                             <constraint firstItem="8QS-zD-8Ut" firstAttribute="top" secondItem="pGE-UA-VGA" secondAttribute="bottom" id="cjB-2p-cmy"/>
                             <constraint firstItem="pGE-UA-VGA" firstAttribute="leading" secondItem="ZPw-1Y-caK" secondAttribute="leading" id="e82-Rm-1ZA"/>
                             <constraint firstItem="pGE-UA-VGA" firstAttribute="top" secondItem="pNs-Hc-7c3" secondAttribute="bottom" id="hsD-Au-y22"/>
+                            <constraint firstItem="AvF-Ci-CeV" firstAttribute="centerX" secondItem="9Cb-Nw-laK" secondAttribute="centerX" id="iFR-V2-UPk"/>
                             <constraint firstItem="Xss-li-dTv" firstAttribute="centerY" secondItem="9Cb-Nw-laK" secondAttribute="centerY" id="qNE-dC-wXV"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="ZPw-1Y-caK"/>
@@ -134,11 +156,12 @@
                         <outlet property="customNavBar" destination="pNs-Hc-7c3" id="Go1-rK-UbK"/>
                         <outlet property="downloadButton" destination="vL2-PM-rdg" id="upn-nI-mbG"/>
                         <outlet property="largeImageView" destination="pGE-UA-VGA" id="0qV-eb-ozL"/>
+                        <outlet property="toastLabel" destination="AvF-Ci-CeV" id="jzR-q4-A63"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YGU-Cj-Sph" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="549" y="-8"/>
+            <point key="canvasLocation" x="547.82608695652175" y="-8.0357142857142847"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="SvB-Ik-cvf">

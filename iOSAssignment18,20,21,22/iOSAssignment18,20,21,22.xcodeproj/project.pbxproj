@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AABCF98F226130F200D7D6C9 /* toastingProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = AABCF98E226130F200D7D6C9 /* toastingProtocol.swift */; };
 		AAD55D30226081EE00320F43 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD55D2F226081EE00320F43 /* AppDelegate.swift */; };
 		AAD55D32226081EE00320F43 /* GalleryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD55D31226081EE00320F43 /* GalleryVC.swift */; };
 		AAD55D35226081EE00320F43 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AAD55D33226081EE00320F43 /* Main.storyboard */; };
@@ -24,6 +25,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AABCF98E226130F200D7D6C9 /* toastingProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = toastingProtocol.swift; sourceTree = "<group>"; };
 		AAD55D2C226081EE00320F43 /* iOSAssignment18,20,21,22.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOSAssignment18,20,21,22.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAD55D2F226081EE00320F43 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AAD55D31226081EE00320F43 /* GalleryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryVC.swift; sourceTree = "<group>"; };
@@ -98,6 +100,7 @@
 			isa = PBXGroup;
 			children = (
 				AAD55D522260E8ED00320F43 /* ImageLoadingExtension.swift */,
+				AABCF98E226130F200D7D6C9 /* toastingProtocol.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -198,6 +201,7 @@
 			files = (
 				AAD55D32226081EE00320F43 /* GalleryVC.swift in Sources */,
 				AAD55D4D22609FD800320F43 /* CustomCollectionViewCell.swift in Sources */,
+				AABCF98F226130F200D7D6C9 /* toastingProtocol.swift in Sources */,
 				AAD55D55226102E300320F43 /* roundButton.swift in Sources */,
 				AAD55D46226082E000320F43 /* dataModal.swift in Sources */,
 				AAD55D30226081EE00320F43 /* AppDelegate.swift in Sources */,
