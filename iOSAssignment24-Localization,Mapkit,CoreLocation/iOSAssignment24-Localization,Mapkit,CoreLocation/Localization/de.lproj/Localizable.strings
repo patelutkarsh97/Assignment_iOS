@@ -1,0 +1,17 @@
+/* 
+  Localizable.strings
+  iOSAssignment24-Localization,Mapkit,CoreLocation
+
+  Created by Utkarsh Patel on 13/04/19.
+  Copyright © 2019 Utkarsh Patel. All rights reserved.
+*/
+
+"userInfoLabel" = "Nutzerinformation";
+"nameLabel" = "Name";
+"stateLabel" = "Staat";
+"countryLabel" = "Ursprungsland";
+"dobLabel" = "Geburtsdatum";
+"lotteryWonLabel" = "Lotterie gewonnen";
+"userDOBLabel" = "11.12.1996";
+"userLotteryWonLabel" = "127.74 Euro";
+

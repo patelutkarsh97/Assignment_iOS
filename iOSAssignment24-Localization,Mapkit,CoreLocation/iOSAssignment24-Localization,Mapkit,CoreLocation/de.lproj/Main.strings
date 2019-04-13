@@ -1,0 +1,33 @@
+
+/* Class = "UILabel"; text = "Utkarsh"; ObjectID = "HGd-Vc-lfe"; */
+"HGd-Vc-lfe.text" = "Utkarsh";
+
+/* Class = "UILabel"; text = "Country"; ObjectID = "I24-hy-Uwh"; */
+"I24-hy-Uwh.text" = "Ursprungsland";
+
+/* Class = "UILabel"; text = "User Information"; ObjectID = "Qrb-o7-hjz"; */
+"Qrb-o7-hjz.text" = "Nutzerinformation";
+
+/* Class = "UILabel"; text = "Name"; ObjectID = "QzL-5t-cck"; */
+"QzL-5t-cck.text" = "Name";
+
+/* Class = "UILabel"; text = "India"; ObjectID = "V9g-t7-tWl"; */
+"V9g-t7-tWl.text" = "India";
+
+/* Class = "UILabel"; text = "11/12/1996"; ObjectID = "XtO-Tg-fRc"; */
+"XtO-Tg-fRc.text" = "11.12.1996";
+
+/* Class = "UILabel"; text = "10,000 Rs"; ObjectID = "dRi-bO-ONy"; */
+"dRi-bO-ONy.text" = "127.74 Euro";
+
+/* Class = "UILabel"; text = "State"; ObjectID = "iGp-kE-oWY"; */
+"iGp-kE-oWY.text" = "Staat";
+
+/* Class = "UILabel"; text = "DOB"; ObjectID = "m4k-sg-H4Z"; */
+"m4k-sg-H4Z.text" = "Geburtsdatum";
+
+/* Class = "UILabel"; text = "Uttar Pradesh"; ObjectID = "q9R-D1-v5L"; */
+"q9R-D1-v5L.text" = "Uttar Pradesh";
+
+/* Class = "UILabel"; text = "Lottery Won"; ObjectID = "vdY-lw-mbp"; */
+"vdY-lw-mbp.text" = "Lotterie gewonnen";
