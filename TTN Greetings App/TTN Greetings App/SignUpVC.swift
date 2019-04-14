@@ -165,7 +165,7 @@ extension UITextField : ErrorViewProtocol
     }
     
     func validationPhone() -> Bool {
-        let phoneRegex = "[6789410]{2}[0-9]{8}"
+        let phoneRegex = "[67589410]{2}[0-9]{8}"
         let phoneTest = NSPredicate(format: "SELF MATCHES %@", phoneRegex)
         let result =  phoneTest.evaluate(with: self.text!)
         return result
