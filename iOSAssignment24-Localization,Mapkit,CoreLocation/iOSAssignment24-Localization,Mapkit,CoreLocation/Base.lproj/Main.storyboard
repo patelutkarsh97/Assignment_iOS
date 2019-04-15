@@ -129,6 +129,7 @@
                                             <segment title="English"/>
                                             <segment title="German"/>
                                             <segment title="Spanish"/>
+                                            <segment title="English (US)"/>
                                         </segments>
                                         <connections>
                                             <action selector="onClickSegment:" destination="BYZ-38-t0r" eventType="valueChanged" id="Kld-yv-VT3"/>

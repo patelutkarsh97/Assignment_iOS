@@ -35,6 +35,8 @@
 		AA4ADE36226221D600E22003 /* MapKitVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapKitVC.swift; sourceTree = "<group>"; };
 		AA4ADE3822623A5D00E22003 /* MapKit2VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapKit2VC.swift; sourceTree = "<group>"; };
 		AA4ADE3A226247F900E22003 /* CoreLocationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreLocationVC.swift; sourceTree = "<group>"; };
+		AAE249BB226440F000F7D447 /* en-IN */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "en-IN"; path = "en-IN.lproj/Main.strings"; sourceTree = "<group>"; };
+		AAE249BC226440F000F7D447 /* en-IN */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "en-IN"; path = "en-IN.lproj/Localizable.strings"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,6 +151,7 @@
 				Base,
 				de,
 				es,
+				"en-IN",
 			);
 			mainGroup = AA4ADE082261E63900E22003;
 			productRefGroup = AA4ADE122261E63900E22003 /* Products */;
@@ -197,6 +200,7 @@
 				AA4ADE2B2261FA6800E22003 /* de */,
 				AA4ADE2C2261FA8900E22003 /* es */,
 				AA4ADE2E2261FAD400E22003 /* en */,
+				AAE249BB226440F000F7D447 /* en-IN */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -215,6 +219,7 @@
 				AA4ADE322262012800E22003 /* en */,
 				AA4ADE342262012C00E22003 /* de */,
 				AA4ADE352262012E00E22003 /* es */,
+				AAE249BC226440F000F7D447 /* en-IN */,
 			);
 			name = Localizable.strings;
 			sourceTree = "<group>";

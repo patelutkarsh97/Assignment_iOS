@@ -63,7 +63,6 @@ class CoreLocationVC: UIViewController, MKMapViewDelegate, CLLocationManagerDele
         if (country! == "US") {
             imageView.isHidden = false
             getImageFromURL()
-            self.imageView.image = locationImage
         }
         else {
             imageView.isHidden = true
@@ -80,9 +79,13 @@ class CoreLocationVC: UIViewController, MKMapViewDelegate, CLLocationManagerDele
         
         let session = URLSession.shared.dataTask(with: imageURL!) { (data, response, error) in
             guard let data = data else { return }
-            let image = UIImage(data: data)
-            self.locationImage = image
-            print("image set")
+            
+            DispatchQueue.main.async {
+                let image = UIImage(data: data)
+                self.locationImage = image
+                self.imageView.image = self.locationImage
+                print("image set")
+            }
         }
         session.resume()
     }

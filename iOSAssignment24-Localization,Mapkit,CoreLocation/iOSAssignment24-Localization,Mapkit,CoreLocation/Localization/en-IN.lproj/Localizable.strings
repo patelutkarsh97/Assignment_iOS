@@ -12,6 +12,6 @@
 "countryLabel" = "Country";
 "dobLabel" = "DOB";
 "lotteryWonLabel" = "Lottery Won";
-"userDOBLabel" = "December 11, 1996";
-"userLotteryWonLabel" = "144.31 USD";
+"userDOBLabel" = "11/12/1996";
+"userLotteryWonLabel" = "10,000 Rs";
 

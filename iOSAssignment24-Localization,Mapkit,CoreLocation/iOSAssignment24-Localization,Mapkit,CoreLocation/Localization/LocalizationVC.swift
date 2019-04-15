@@ -29,15 +29,15 @@ class LocalizationVC: UIViewController {
     }
     @IBAction func onClickSegment(_ sender: UISegmentedControl) {
         if segment.selectedSegmentIndex == 0 {
-            // English
-            nameLabel.text = "nameLabel".localizableString(location: "en")
-            userInfoLabel.text = "userInfoLabel".localizableString(location: "en")
-            stateLabel.text = "stateLabel".localizableString(location: "en")
-            countryLabel.text = "countryLabel".localizableString(location: "en")
-            dobLabel.text = "dobLabel".localizableString(location: "en")
-            lotteryWonLabel.text = "lotteryWonLabel".localizableString(location: "en")
-            userDOBLabel.text = "userDOBLabel".localizableString(location: "en")
-            userLotteryWonLabel.text = "userLotteryWonLabel".localizableString(location: "en")
+            // English IN
+            nameLabel.text = "nameLabel".localizableString(location: "en-IN")
+            userInfoLabel.text = "userInfoLabel".localizableString(location: "en-IN")
+            stateLabel.text = "stateLabel".localizableString(location: "en-IN")
+            countryLabel.text = "countryLabel".localizableString(location: "en-IN")
+            dobLabel.text = "dobLabel".localizableString(location: "en-IN")
+            lotteryWonLabel.text = "lotteryWonLabel".localizableString(location: "en-IN")
+            userDOBLabel.text = "userDOBLabel".localizableString(location: "en-IN")
+            userLotteryWonLabel.text = "userLotteryWonLabel".localizableString(location: "en-IN")
         }
         else if segment.selectedSegmentIndex == 1 {
             // German
@@ -50,7 +50,7 @@ class LocalizationVC: UIViewController {
             userDOBLabel.text = "userDOBLabel".localizableString(location: "de")
             userLotteryWonLabel.text = "userLotteryWonLabel".localizableString(location: "de")
         }
-        else {
+        else if segment.selectedSegmentIndex == 2 {
             // Spanish
             nameLabel.text = "nameLabel".localizableString(location: "es")
             userInfoLabel.text = "userInfoLabel".localizableString(location: "es")
@@ -60,6 +60,19 @@ class LocalizationVC: UIViewController {
             lotteryWonLabel.text = "lotteryWonLabel".localizableString(location: "es")
             userDOBLabel.text = "userDOBLabel".localizableString(location: "es")
             userLotteryWonLabel.text = "userLotteryWonLabel".localizableString(location: "es")
+        }
+        
+        else {
+            // English US
+            nameLabel.text = "nameLabel".localizableString(location: "en")
+            userInfoLabel.text = "userInfoLabel".localizableString(location: "en")
+            stateLabel.text = "stateLabel".localizableString(location: "en")
+            countryLabel.text = "countryLabel".localizableString(location: "en")
+            dobLabel.text = "dobLabel".localizableString(location: "en")
+            lotteryWonLabel.text = "lotteryWonLabel".localizableString(location: "en")
+            userDOBLabel.text = "userDOBLabel".localizableString(location: "en")
+            userLotteryWonLabel.text = "userLotteryWonLabel".localizableString(location: "en")
+
         }
     }
     
