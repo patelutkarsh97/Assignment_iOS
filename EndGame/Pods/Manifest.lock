@@ -1,0 +1,28 @@
+PODS:
+  - LBTAComponents (1.0.2)
+  - NVActivityIndicatorView (4.7.0):
+    - NVActivityIndicatorView/Presenter (= 4.7.0)
+  - NVActivityIndicatorView/AppExtension (4.7.0)
+  - NVActivityIndicatorView/Presenter (4.7.0)
+  - RevealingSplashView (0.6.0)
+
+DEPENDENCIES:
+  - LBTAComponents
+  - NVActivityIndicatorView
+  - NVActivityIndicatorView/AppExtension
+  - RevealingSplashView
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - LBTAComponents
+    - NVActivityIndicatorView
+    - RevealingSplashView
+
+SPEC CHECKSUMS:
+  LBTAComponents: c4c8863e0ef6715e378300db148b96a09df656f7
+  NVActivityIndicatorView: b19ddab2576f805cbe0fb2306cba3476e09a1dea
+  RevealingSplashView: 40c5a770894459736acdc95655eeba0dd30ce91c
+
+PODFILE CHECKSUM: 5cac72e3748b2cc33fb24ab46a574e1563053211
+
+COCOAPODS: 1.6.1

@@ -1,0 +1,6 @@
+framework module Pods_EndGame {
+  umbrella header "Pods-EndGame-umbrella.h"
+
+  export *
+  module * { export * }
+}
