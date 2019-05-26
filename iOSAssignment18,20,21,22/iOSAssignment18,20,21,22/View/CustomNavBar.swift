@@ -32,6 +32,5 @@ class CustomNavBar: UIView {
             view.autoresizingMask = [.flexibleWidth , .flexibleHeight]
             self.addSubview(view)
         }
-
     }
 }

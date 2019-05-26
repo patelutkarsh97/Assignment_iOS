@@ -136,23 +136,34 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="E7k-f8-a3J">
-                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="673"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="separatorColor" red="0.74900037050000001" green="0.2014703155" blue="0.19814750549999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </tableView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="maK-ks-rGB" customClass="SearchFooter" customModule="EndGame" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="769" width="414" height="44"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="VCE-4g-FIV"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="E7k-f8-a3J" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="3Je-qM-9E9"/>
+                            <constraint firstItem="maK-ks-rGB" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="D43-OI-vxc"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="E7k-f8-a3J" secondAttribute="trailing" id="Fsu-vh-DV0"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="E7k-f8-a3J" secondAttribute="bottom" id="Tkd-Ad-A5i"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="E7k-f8-a3J" secondAttribute="bottom" constant="52" id="Tkd-Ad-A5i"/>
+                            <constraint firstItem="maK-ks-rGB" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Y1l-fN-UhW"/>
                             <constraint firstItem="E7k-f8-a3J" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="ZeR-N2-TP0"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="maK-ks-rGB" secondAttribute="trailing" id="gMw-hL-xKo"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="iuh-RM-NFl"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
+                        <outlet property="searchFooter" destination="maK-ks-rGB" id="rLT-TC-o2c"/>
                         <outlet property="tableView" destination="E7k-f8-a3J" id="KIf-JC-mz5"/>
                     </connections>
                 </viewController>
@@ -279,9 +290,12 @@
                         <viewLayoutGuide key="safeArea" id="IMm-0d-0Kf"/>
                     </view>
                     <connections>
+                        <outlet property="ageLabel" destination="bme-YZ-qyM" id="gpk-SH-q6h"/>
                         <outlet property="collectionView" destination="CkK-uo-CGg" id="L9E-Uw-ZFg"/>
                         <outlet property="customSegment" destination="N5U-7v-EQ3" id="kW3-J1-ymg"/>
                         <outlet property="mapView" destination="r9Y-vy-mwH" id="T6M-lg-fcw"/>
+                        <outlet property="nameLabel" destination="pOF-dW-F4I" id="mxC-bQ-Y0u"/>
+                        <outlet property="salaryLabel" destination="YLg-JE-a2D" id="yfT-S2-HTu"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nnI-ET-D4B" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -402,24 +416,77 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JAy-30-h6c">
-                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
-                            </scrollView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uVm-6Z-5rI" customClass="SignInView" customModule="EndGame" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="233.5" width="414" height="250"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="250" id="ZsG-bJ-sh7"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uqa-Wi-vuO" userLabel="LogInView" customClass="LogInView" customModule="EndGame" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="233.5" width="414" height="250"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="250" id="XVs-yh-VvD"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ksu-PA-yJU">
+                                <rect key="frame" x="298" y="493.5" width="86" height="32"/>
+                                <state key="normal" backgroundImage="nextButton"/>
+                                <connections>
+                                    <action selector="onClickNextButton:" destination="YX8-GT-G9g" eventType="touchUpInside" id="2GG-kU-9uU"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K84-Od-bRH">
+                                <rect key="frame" x="298" y="595.5" width="86" height="32"/>
+                                <state key="normal" backgroundImage="nextButton"/>
+                                <connections>
+                                    <action selector="onClickNextButton:" destination="YX8-GT-G9g" eventType="touchUpInside" id="2ps-1Z-x0G"/>
+                                    <action selector="onClickNextButtonOfPasswordView:" destination="YX8-GT-G9g" eventType="touchUpInside" id="Ee7-GU-BGM"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="JAy-30-h6c" firstAttribute="top" secondItem="dho-ng-jck" secondAttribute="top" id="0Sq-fz-ysK"/>
-                            <constraint firstItem="dho-ng-jck" firstAttribute="trailing" secondItem="JAy-30-h6c" secondAttribute="trailing" id="2aP-vs-ogf"/>
-                            <constraint firstItem="dho-ng-jck" firstAttribute="bottom" secondItem="JAy-30-h6c" secondAttribute="bottom" id="Ywh-Dr-LJd"/>
-                            <constraint firstItem="JAy-30-h6c" firstAttribute="leading" secondItem="dho-ng-jck" secondAttribute="leading" id="gZO-dd-8Wv"/>
+                            <constraint firstItem="dho-ng-jck" firstAttribute="trailing" secondItem="K84-Od-bRH" secondAttribute="trailing" constant="30" id="9Dp-nK-Aoj"/>
+                            <constraint firstItem="uVm-6Z-5rI" firstAttribute="leading" secondItem="dho-ng-jck" secondAttribute="leading" id="APs-sD-Rzj"/>
+                            <constraint firstItem="dho-ng-jck" firstAttribute="trailing" secondItem="ksu-PA-yJU" secondAttribute="trailing" constant="30" id="Cq1-hZ-rBf"/>
+                            <constraint firstItem="uqa-Wi-vuO" firstAttribute="trailing" secondItem="dho-ng-jck" secondAttribute="trailing" id="HAH-P0-QLG"/>
+                            <constraint firstItem="dho-ng-jck" firstAttribute="trailing" secondItem="uVm-6Z-5rI" secondAttribute="trailing" id="MdA-P8-Wlp"/>
+                            <constraint firstItem="uqa-Wi-vuO" firstAttribute="leading" secondItem="dho-ng-jck" secondAttribute="leading" id="fwh-W0-YIb"/>
+                            <constraint firstItem="uVm-6Z-5rI" firstAttribute="centerY" secondItem="DMD-u7-rvf" secondAttribute="centerY" multiplier="0.8" id="h9I-KN-U3J"/>
+                            <constraint firstItem="ksu-PA-yJU" firstAttribute="top" secondItem="uVm-6Z-5rI" secondAttribute="bottom" constant="10" id="nFt-IQ-5Jh"/>
+                            <constraint firstItem="K84-Od-bRH" firstAttribute="top" secondItem="ksu-PA-yJU" secondAttribute="bottom" constant="70" id="r8D-BC-ASq"/>
+                            <constraint firstItem="uqa-Wi-vuO" firstAttribute="centerY" secondItem="DMD-u7-rvf" secondAttribute="centerY" multiplier="0.8" id="uaj-He-9hK"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="dho-ng-jck"/>
                     </view>
                     <navigationItem key="navigationItem" id="rsh-D1-G3d"/>
+                    <connections>
+                        <outlet property="nextButton" destination="ksu-PA-yJU" id="MCx-ZQ-iwN"/>
+                        <outlet property="nextButtonOfPasswordView" destination="K84-Od-bRH" id="6s1-sM-RXb"/>
+                        <outlet property="passwordView" destination="uqa-Wi-vuO" id="6Oi-70-50M"/>
+                        <outlet property="userView" destination="uVm-6Z-5rI" id="JSG-oW-Atv"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eAD-tg-f7t" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-52.173913043478265" y="2372.5446428571427"/>
+        </scene>
+        <!--Sign UpVC-->
+        <scene sceneID="aDu-gD-Gjt">
+            <objects>
+                <viewController storyboardIdentifier="SignUpVC" id="d9S-80-yDr" customClass="SignUpVC" customModule="EndGame" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="SJk-oU-NDe" customClass="SignUp">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="Bn4-Rr-Kzx"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SC2-IL-dfJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="669" y="2372"/>
         </scene>
         <!--Login-->
         <scene sceneID="qui-c7-XtQ">
@@ -448,6 +515,7 @@
         <image name="Map_26x26" width="26" height="26"/>
         <image name="galleryNew_26x26" width="26" height="26"/>
         <image name="mask" width="96" height="96"/>
+        <image name="nextButton" width="86" height="32"/>
         <image name="unlockFalse_26x26" width="26" height="26"/>
     </resources>
 </document>

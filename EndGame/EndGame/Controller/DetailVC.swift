@@ -10,7 +10,10 @@ import UIKit
 import MapKit
 
 class DetailVC: UIViewController {
-    
+   
+    @IBOutlet weak var salaryLabel: UILabel!
+    @IBOutlet weak var ageLabel: UILabel!
+    @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var mapView: MKMapView!
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var customSegment: CustomSegment!
@@ -25,6 +28,7 @@ class DetailVC: UIViewController {
         let nib = UINib.init(nibName: "customCollectionCell", bundle: nil)
         collectionView.register(nib, forCellWithReuseIdentifier: "collectionCell")
         performActions()
+        fillDetailsOfEmp()
     }
     
     private func performActions() {
@@ -88,6 +92,12 @@ extension DetailVC : UICollectionViewDelegate, UICollectionViewDataSource, UICol
         let dimension = (collectionView.frame.width-30)/3
         
         return CGSize(width: dimension, height: dimension)
+    }
+    
+    func fillDetailsOfEmp() {
+        nameLabel.text = employeeName
+        salaryLabel.text = employeeSalary
+        ageLabel.text = employeeAge
     }
     
     

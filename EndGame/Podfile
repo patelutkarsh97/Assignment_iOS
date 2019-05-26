@@ -10,5 +10,6 @@ target 'EndGame' do
   pod 'LBTAComponents'
   pod 'NVActivityIndicatorView'
   pod 'NVActivityIndicatorView/AppExtension'
+  pod 'TextFieldEffects'
   
 end

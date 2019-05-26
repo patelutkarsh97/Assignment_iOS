@@ -5,24 +5,28 @@ PODS:
   - NVActivityIndicatorView/AppExtension (4.7.0)
   - NVActivityIndicatorView/Presenter (4.7.0)
   - RevealingSplashView (0.6.0)
+  - TextFieldEffects (1.5.1)
 
 DEPENDENCIES:
   - LBTAComponents
   - NVActivityIndicatorView
   - NVActivityIndicatorView/AppExtension
   - RevealingSplashView
+  - TextFieldEffects
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - LBTAComponents
     - NVActivityIndicatorView
     - RevealingSplashView
+    - TextFieldEffects
 
 SPEC CHECKSUMS:
   LBTAComponents: c4c8863e0ef6715e378300db148b96a09df656f7
   NVActivityIndicatorView: b19ddab2576f805cbe0fb2306cba3476e09a1dea
   RevealingSplashView: 40c5a770894459736acdc95655eeba0dd30ce91c
+  TextFieldEffects: 7d372f58aeaf9acd9626bbf962680aef926b085d
 
-PODFILE CHECKSUM: 5cac72e3748b2cc33fb24ab46a574e1563053211
+PODFILE CHECKSUM: e26660e7947845f92c3f3309327db946625094d7
 
 COCOAPODS: 1.6.1

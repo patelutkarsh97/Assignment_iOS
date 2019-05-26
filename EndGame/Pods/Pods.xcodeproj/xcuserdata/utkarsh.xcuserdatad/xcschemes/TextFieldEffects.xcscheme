@@ -14,9 +14,9 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "9F272EE9077542CC46140C67EF1D5CCA"
-               BuildableName = "RevealingSplashView.framework"
-               BlueprintName = "RevealingSplashView"
+               BlueprintIdentifier = "B5FE26A86A0B60ABF476550731E000EC"
+               BuildableName = "TextFieldEffects.framework"
+               BlueprintName = "TextFieldEffects"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>

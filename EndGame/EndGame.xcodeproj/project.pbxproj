@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		9D99E41A4299F07E534C6F3A /* Pods_EndGame.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEED80EF4DAF8BB5B1586B3F /* Pods_EndGame.framework */; };
+		AA1DF0262297B1A300B582A3 /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA1DF0252297B1A300B582A3 /* SignUpVC.swift */; };
 		AA2FA42F227193740039BAC6 /* customCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA2FA42D227193740039BAC6 /* customCollectionCell.swift */; };
 		AA2FA430227193740039BAC6 /* customCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AA2FA42E227193740039BAC6 /* customCollectionCell.xib */; };
 		AA592C4B226EF2AE00485910 /* customTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA592C49226EF2AE00485910 /* customTableCell.swift */; };
@@ -27,10 +28,18 @@
 		AADAD7552269C16C00717AC4 /* GalleryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADAD7542269C16C00717AC4 /* GalleryVC.swift */; };
 		AADAD7572269C1BC00717AC4 /* MapVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADAD7562269C1BC00717AC4 /* MapVC.swift */; };
 		AADAD7592269C1F200717AC4 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADAD7582269C1F200717AC4 /* LoginVC.swift */; };
+		AADEFECE2272EED10089E9A0 /* SignInView.xib in Resources */ = {isa = PBXBuildFile; fileRef = AADEFECD2272EED10089E9A0 /* SignInView.xib */; };
+		AADEFED02272EF000089E9A0 /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADEFECF2272EF000089E9A0 /* SignInView.swift */; };
+		AADEFED22274D41E0089E9A0 /* LogInView.xib in Resources */ = {isa = PBXBuildFile; fileRef = AADEFED12274D41E0089E9A0 /* LogInView.xib */; };
+		AADEFED42274D4470089E9A0 /* LogInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADEFED32274D4470089E9A0 /* LogInView.swift */; };
+		AAF345712298537B0052E4E0 /* empList.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAF345702298537B0052E4E0 /* empList.swift */; };
+		AAF345732298712C0052E4E0 /* ConnectivityVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAF345722298712C0052E4E0 /* ConnectivityVC.swift */; };
+		AAF3457522994E3C0052E4E0 /* SearchFooter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAF3457422994E3C0052E4E0 /* SearchFooter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		05F6738C6D4B4871636CAB75 /* Pods-EndGame.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EndGame.release.xcconfig"; path = "Target Support Files/Pods-EndGame/Pods-EndGame.release.xcconfig"; sourceTree = "<group>"; };
+		AA1DF0252297B1A300B582A3 /* SignUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
 		AA2FA42D227193740039BAC6 /* customCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = customCollectionCell.swift; sourceTree = "<group>"; };
 		AA2FA42E227193740039BAC6 /* customCollectionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = customCollectionCell.xib; sourceTree = "<group>"; };
 		AA592C49226EF2AE00485910 /* customTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = customTableCell.swift; sourceTree = "<group>"; };
@@ -52,6 +61,13 @@
 		AADAD7542269C16C00717AC4 /* GalleryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryVC.swift; sourceTree = "<group>"; };
 		AADAD7562269C1BC00717AC4 /* MapVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapVC.swift; sourceTree = "<group>"; };
 		AADAD7582269C1F200717AC4 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		AADEFECD2272EED10089E9A0 /* SignInView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignInView.xib; sourceTree = "<group>"; };
+		AADEFECF2272EF000089E9A0 /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
+		AADEFED12274D41E0089E9A0 /* LogInView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LogInView.xib; sourceTree = "<group>"; };
+		AADEFED32274D4470089E9A0 /* LogInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInView.swift; sourceTree = "<group>"; };
+		AAF345702298537B0052E4E0 /* empList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = empList.swift; sourceTree = "<group>"; };
+		AAF345722298712C0052E4E0 /* ConnectivityVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectivityVC.swift; sourceTree = "<group>"; };
+		AAF3457422994E3C0052E4E0 /* SearchFooter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchFooter.swift; sourceTree = "<group>"; };
 		E4F95666888963B9A672CBE5 /* Pods-EndGame.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EndGame.debug.xcconfig"; path = "Target Support Files/Pods-EndGame/Pods-EndGame.debug.xcconfig"; sourceTree = "<group>"; };
 		FEED80EF4DAF8BB5B1586B3F /* Pods_EndGame.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EndGame.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -122,6 +138,7 @@
 		AADAD74D2269960100717AC4 /* Modal */ = {
 			isa = PBXGroup;
 			children = (
+				AAF345702298537B0052E4E0 /* empList.swift */,
 			);
 			path = Modal;
 			sourceTree = "<group>";
@@ -135,6 +152,11 @@
 				AA592C532270939700485910 /* CustomSegment.xib */,
 				AA2FA42D227193740039BAC6 /* customCollectionCell.swift */,
 				AA2FA42E227193740039BAC6 /* customCollectionCell.xib */,
+				AADEFECD2272EED10089E9A0 /* SignInView.xib */,
+				AADEFECF2272EF000089E9A0 /* SignInView.swift */,
+				AADEFED12274D41E0089E9A0 /* LogInView.xib */,
+				AADEFED32274D4470089E9A0 /* LogInView.swift */,
+				AAF3457422994E3C0052E4E0 /* SearchFooter.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -150,6 +172,8 @@
 				AA8F0921226B3DE40014C2C4 /* TabBarController.swift */,
 				AA8F0923226B76260014C2C4 /* ViewController.swift */,
 				AA592C4D2270265100485910 /* DetailVC.swift */,
+				AA1DF0252297B1A300B582A3 /* SignUpVC.swift */,
+				AAF345722298712C0052E4E0 /* ConnectivityVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -216,10 +240,12 @@
 			files = (
 				AADAD746226995C900717AC4 /* LaunchScreen.storyboard in Resources */,
 				AADAD743226995C800717AC4 /* Assets.xcassets in Resources */,
+				AADEFED22274D41E0089E9A0 /* LogInView.xib in Resources */,
 				AA2FA430227193740039BAC6 /* customCollectionCell.xib in Resources */,
 				AADAD73E226995C800717AC4 /* Main.storyboard in Resources */,
 				AA592C542270939700485910 /* CustomSegment.xib in Resources */,
 				AA592C4C226EF2AE00485910 /* customTableCell.xib in Resources */,
+				AADEFECE2272EED10089E9A0 /* SignInView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -238,6 +264,7 @@
 				"${BUILT_PRODUCTS_DIR}/LBTAComponents/LBTAComponents.framework",
 				"${BUILT_PRODUCTS_DIR}/NVActivityIndicatorView/NVActivityIndicatorView.framework",
 				"${BUILT_PRODUCTS_DIR}/RevealingSplashView/RevealingSplashView.framework",
+				"${BUILT_PRODUCTS_DIR}/TextFieldEffects/TextFieldEffects.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
@@ -246,6 +273,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LBTAComponents.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NVActivityIndicatorView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RevealingSplashView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TextFieldEffects.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -281,6 +309,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AADEFED42274D4470089E9A0 /* LogInView.swift in Sources */,
 				AADAD7572269C1BC00717AC4 /* MapVC.swift in Sources */,
 				AA8F0922226B3DE40014C2C4 /* TabBarController.swift in Sources */,
 				AA592C4E2270265100485910 /* DetailVC.swift in Sources */,
@@ -288,12 +317,17 @@
 				AA592C4B226EF2AE00485910 /* customTableCell.swift in Sources */,
 				AA8F0924226B76260014C2C4 /* ViewController.swift in Sources */,
 				AADAD73B226995C800717AC4 /* EmployeeListVC.swift in Sources */,
+				AA1DF0262297B1A300B582A3 /* SignUpVC.swift in Sources */,
 				AADAD7592269C1F200717AC4 /* LoginVC.swift in Sources */,
+				AAF345712298537B0052E4E0 /* empList.swift in Sources */,
+				AADEFED02272EF000089E9A0 /* SignInView.swift in Sources */,
 				AA592C522270936F00485910 /* CustomSegment.swift in Sources */,
+				AAF3457522994E3C0052E4E0 /* SearchFooter.swift in Sources */,
 				AADAD741226995C800717AC4 /* EndGame.xcdatamodeld in Sources */,
 				AADAD739226995C800717AC4 /* AppDelegate.swift in Sources */,
 				AA2FA42F227193740039BAC6 /* customCollectionCell.swift in Sources */,
 				AADAD7552269C16C00717AC4 /* GalleryVC.swift in Sources */,
+				AAF345732298712C0052E4E0 /* ConnectivityVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

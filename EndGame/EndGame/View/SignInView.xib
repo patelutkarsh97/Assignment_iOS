@@ -1,18 +1,137 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13142" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12042"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SignInView" customModule="EndGame" customModuleProvider="target">
+            <connections>
+                <outlet property="emailTextField" destination="4cz-tA-AFd" id="wjU-od-eNk"/>
+                <outlet property="validationImage" destination="yPQ-lR-1uj" id="Oet-Vr-RqW"/>
+            </connections>
+        </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="iN0-l3-epB">
-            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <rect key="frame" x="0.0" y="0.0" width="573" height="264"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d2g-7i-V1d">
+                    <rect key="frame" x="40" y="74" width="493" height="35"/>
+                    <attributedString key="attributedText">
+                        <fragment content="E">
+                            <attributes>
+                                <color key="NSColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <font key="NSFont" size="30" name="ArialRoundedMTBold"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content="n">
+                            <attributes>
+                                <color key="NSColor" red="0.87219697237014771" green="0.25009223818778992" blue="0.19576886296272278" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <font key="NSFont" size="30" name="ArialRoundedMTBold"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content="d">
+                            <attributes>
+                                <color key="NSColor" red="0.85392123460769653" green="0.63710451126098633" blue="0.039770197123289108" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <font key="NSFont" size="30" name="ArialRoundedMTBold"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content=" G">
+                            <attributes>
+                                <color key="NSColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <font key="NSFont" size="30" name="ArialRoundedMTBold"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content="a">
+                            <attributes>
+                                <color key="NSColor" red="0.18690267205238342" green="0.60558605194091797" blue="0.2976652979850769" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <font key="NSFont" size="30" name="ArialRoundedMTBold"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content="m">
+                            <attributes>
+                                <color key="NSColor" red="0.9183315634727478" green="0.26254063844680786" blue="0.20620131492614746" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <font key="NSFont" size="30" name="ArialRoundedMTBold"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content="e">
+                            <attributes>
+                                <color key="NSColor" red="0.97429889440536499" green="0.72808253765106201" blue="0.025892514735460281" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <font key="NSFont" size="30" name="ArialRoundedMTBold"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                            </attributes>
+                        </fragment>
+                    </attributedString>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sign in" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DF3-zL-xZl">
+                    <rect key="frame" x="40" y="129" width="493" height="35"/>
+                    <fontDescription key="fontDescription" name="GujaratiSangamMN-Bold" family="Gujarati Sangam MN" pointSize="25"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="line" placeholder="Email" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="4cz-tA-AFd" customClass="HoshiTextField" customModule="TextFieldEffects">
+                    <rect key="frame" x="40" y="194" width="421" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="FGs-jc-hq2"/>
+                    </constraints>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="emailAddress" keyboardAppearance="alert"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="color" keyPath="borderInactiveColor">
+                            <color key="value" red="0.43529412150000002" green="0.4431372583" blue="0.47450980539999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="borderActiveColor">
+                            <color key="value" red="0.10118380934000015" green="0.45058095455169678" blue="0.90915334224700928" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                            <color key="value" red="0.43529412150000002" green="0.4431372583" blue="0.47450980539999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="placeholderFontScale">
+                            <real key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </textField>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="yPQ-lR-1uj">
+                    <rect key="frame" x="501" y="204" width="32" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="FhB-dm-ixh"/>
+                        <constraint firstAttribute="width" constant="32" id="NTO-Zc-FHa"/>
+                    </constraints>
+                </imageView>
+            </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="d2g-7i-V1d" secondAttribute="trailing" constant="40" id="1ln-tT-oo6"/>
+                <constraint firstItem="4cz-tA-AFd" firstAttribute="top" secondItem="DF3-zL-xZl" secondAttribute="bottom" constant="30" id="CDF-wY-7GY"/>
+                <constraint firstItem="DF3-zL-xZl" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="40" id="Cnh-g1-tHX"/>
+                <constraint firstItem="d2g-7i-V1d" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="40" id="E7O-NV-Vjj"/>
+                <constraint firstItem="yPQ-lR-1uj" firstAttribute="top" secondItem="DF3-zL-xZl" secondAttribute="bottom" constant="40" id="ITG-N8-Ch7"/>
+                <constraint firstItem="yPQ-lR-1uj" firstAttribute="leading" secondItem="4cz-tA-AFd" secondAttribute="trailing" constant="40" id="SgO-6y-uON"/>
+                <constraint firstItem="4cz-tA-AFd" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="40" id="Uzh-R7-bhe"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="yPQ-lR-1uj" secondAttribute="trailing" constant="40" id="aVP-XW-ZUb"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="DF3-zL-xZl" secondAttribute="trailing" constant="40" id="b3A-CZ-m3r"/>
+                <constraint firstItem="DF3-zL-xZl" firstAttribute="top" secondItem="d2g-7i-V1d" secondAttribute="bottom" constant="20" id="h4y-Cx-xXT"/>
+                <constraint firstItem="d2g-7i-V1d" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="30" id="r3y-GH-2Ge"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="163.04347826086959" y="-176.11607142857142"/>
         </view>
     </objects>
 </document>

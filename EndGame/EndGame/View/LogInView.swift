@@ -8,14 +8,38 @@
 
 import UIKit
 
-class LogInView: UIView {
+class LogInView: UIView, UITextFieldDelegate {
 
-    /*
-    // Only override draw() if you perform custom drawing.
-    // An empty implementation adversely affects performance during animation.
-    override func draw(_ rect: CGRect) {
-        // Drawing code
+    @IBOutlet weak var emailDisplayButton: UIButton!
+    @IBOutlet weak var passwordTextField: UITextField!
+    @IBOutlet weak var validationImage: UIImageView!
+    @IBOutlet weak var reTypePasswordTextField: UITextField!
+    
+    @IBOutlet weak var onClickEmailDisplayButton: UIButton!
+    
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        registerNib()
     }
-    */
-
+    
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+        registerNib()
+    }
+    
+    private func registerNib() {
+        
+        let bundle = Bundle(for: type(of: self))
+        let nib = UINib(nibName: "LogInView", bundle: bundle)
+        if let view = nib.instantiate(withOwner: self, options: nil).first as? UIView {
+            view.frame = self.bounds
+            view.autoresizingMask = [.flexibleWidth , .flexibleHeight]
+            self.addSubview(view)
+        }
+    }
+    
+    public func textFieldDidBeginEditing(_ textField: UITextField) {
+        validationImage.image = nil
+    }
 }
+
