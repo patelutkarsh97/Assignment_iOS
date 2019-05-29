@@ -67,7 +67,7 @@ extension GalleryVC : UICollectionViewDelegate, UICollectionViewDataSource, UICo
         let widthOfImage = (collectionView.bounds.width/2.0) - 15
         let heightOfImage = widthOfImage * (3/4)
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "collectionCell", for: indexPath) as! CustomCollectionViewCell
-        let url = "https://picsum.photos/\(widthOfImage)/\(heightOfImage)?image=\(jsonArray[indexPath.row].id)"
+        let url = "https://picsum.photos/id/\(Int(jsonArray[indexPath.row].id))/\(Int(widthOfImage))/\(Int(heightOfImage))"
         guard let imageURL = URL(string: url) else { return cell }
         UIImage.lodingImage(url: imageURL) { image in
             if let image = image {
@@ -85,9 +85,9 @@ extension GalleryVC : UICollectionViewDelegate, UICollectionViewDataSource, UICo
         
         let widthOfImage = self.view.bounds.width
         let heightOfImage = self.view.bounds.height
-        let imageurl = "https://picsum.photos/\(widthOfImage)/\(heightOfImage)?image=\(jsonArray[indexPath.row].id)"
+        let imageurl = "https://picsum.photos/id/\(Int(jsonArray[indexPath.row].id))/\(Int(widthOfImage))/\(Int(heightOfImage))"
         guard let url = URL(string: imageurl) else { return }
-        
+       // https://picsum.photos/id/\(jsonArray[indexPath.row].id)/\(widthOfImage)/\(heightOfImage)
         UIImage.lodingImage(url: url) { image in
             controller.largeImageView.image = image
 //            controller.authorNameLabel.text = self.arrayOfJSON[indexPath.row].author as String

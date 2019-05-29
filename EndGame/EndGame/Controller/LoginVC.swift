@@ -14,6 +14,7 @@ class LoginVC: UIViewController,UITextFieldDelegate {
     var flag = 0
     @IBOutlet weak var nextButton: UIButton!
     @IBOutlet weak var nextButtonOfPasswordView: UIButton!
+    @IBOutlet weak var createAccountButton: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
         passwordView.isHidden = true
@@ -69,5 +70,11 @@ class LoginVC: UIViewController,UITextFieldDelegate {
     public func textFieldDidBeginEditing(_ textField: UITextField) {
         passwordView.validationImage.image = nil
         userView.validationImage.image = nil
+    }
+    @IBAction func onClickClickHere(_ sender: Any) {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let contoller = storyboard.instantiateViewController(withIdentifier: "SignUpVC")
+        self.navigationController?.pushViewController(contoller,animated: true)
+        
     }
 }

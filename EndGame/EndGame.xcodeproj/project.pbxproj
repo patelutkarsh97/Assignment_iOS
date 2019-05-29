@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		9D99E41A4299F07E534C6F3A /* Pods_EndGame.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEED80EF4DAF8BB5B1586B3F /* Pods_EndGame.framework */; };
 		AA1DF0262297B1A300B582A3 /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA1DF0252297B1A300B582A3 /* SignUpVC.swift */; };
+		AA28F193229D549B00D582E3 /* imageModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA28F192229D549B00D582E3 /* imageModal.swift */; };
+		AA28F196229D5B4700D582E3 /* ImageLoadingExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA28F195229D5B4700D582E3 /* ImageLoadingExtension.swift */; };
+		AA28F19D229E5BAC00D582E3 /* ImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA28F19B229E5BAC00D582E3 /* ImageCollectionViewCell.swift */; };
+		AA28F19E229E5BAC00D582E3 /* ImageCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AA28F19C229E5BAC00D582E3 /* ImageCollectionViewCell.xib */; };
 		AA2FA42F227193740039BAC6 /* customCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA2FA42D227193740039BAC6 /* customCollectionCell.swift */; };
 		AA2FA430227193740039BAC6 /* customCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AA2FA42E227193740039BAC6 /* customCollectionCell.xib */; };
 		AA592C4B226EF2AE00485910 /* customTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA592C49226EF2AE00485910 /* customTableCell.swift */; };
@@ -40,6 +44,10 @@
 /* Begin PBXFileReference section */
 		05F6738C6D4B4871636CAB75 /* Pods-EndGame.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EndGame.release.xcconfig"; path = "Target Support Files/Pods-EndGame/Pods-EndGame.release.xcconfig"; sourceTree = "<group>"; };
 		AA1DF0252297B1A300B582A3 /* SignUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
+		AA28F192229D549B00D582E3 /* imageModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = imageModal.swift; sourceTree = "<group>"; };
+		AA28F195229D5B4700D582E3 /* ImageLoadingExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoadingExtension.swift; sourceTree = "<group>"; };
+		AA28F19B229E5BAC00D582E3 /* ImageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCollectionViewCell.swift; sourceTree = "<group>"; };
+		AA28F19C229E5BAC00D582E3 /* ImageCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImageCollectionViewCell.xib; sourceTree = "<group>"; };
 		AA2FA42D227193740039BAC6 /* customCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = customCollectionCell.swift; sourceTree = "<group>"; };
 		AA2FA42E227193740039BAC6 /* customCollectionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = customCollectionCell.xib; sourceTree = "<group>"; };
 		AA592C49226EF2AE00485910 /* customTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = customTableCell.swift; sourceTree = "<group>"; };
@@ -101,6 +109,14 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		AA28F194229D5B3000D582E3 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				AA28F195229D5B4700D582E3 /* ImageLoadingExtension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
 		AADAD72C226995C800717AC4 = {
 			isa = PBXGroup;
 			children = (
@@ -122,6 +138,7 @@
 		AADAD737226995C800717AC4 /* EndGame */ = {
 			isa = PBXGroup;
 			children = (
+				AA28F194229D5B3000D582E3 /* Extension */,
 				AADAD74D2269960100717AC4 /* Modal */,
 				AADAD74E2269960800717AC4 /* View */,
 				AADAD74F2269960F00717AC4 /* Controller */,
@@ -139,6 +156,7 @@
 			isa = PBXGroup;
 			children = (
 				AAF345702298537B0052E4E0 /* empList.swift */,
+				AA28F192229D549B00D582E3 /* imageModal.swift */,
 			);
 			path = Modal;
 			sourceTree = "<group>";
@@ -157,6 +175,8 @@
 				AADEFED12274D41E0089E9A0 /* LogInView.xib */,
 				AADEFED32274D4470089E9A0 /* LogInView.swift */,
 				AAF3457422994E3C0052E4E0 /* SearchFooter.swift */,
+				AA28F19B229E5BAC00D582E3 /* ImageCollectionViewCell.swift */,
+				AA28F19C229E5BAC00D582E3 /* ImageCollectionViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -245,6 +265,7 @@
 				AADAD73E226995C800717AC4 /* Main.storyboard in Resources */,
 				AA592C542270939700485910 /* CustomSegment.xib in Resources */,
 				AA592C4C226EF2AE00485910 /* customTableCell.xib in Resources */,
+				AA28F19E229E5BAC00D582E3 /* ImageCollectionViewCell.xib in Resources */,
 				AADEFECE2272EED10089E9A0 /* SignInView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -311,7 +332,9 @@
 			files = (
 				AADEFED42274D4470089E9A0 /* LogInView.swift in Sources */,
 				AADAD7572269C1BC00717AC4 /* MapVC.swift in Sources */,
+				AA28F196229D5B4700D582E3 /* ImageLoadingExtension.swift in Sources */,
 				AA8F0922226B3DE40014C2C4 /* TabBarController.swift in Sources */,
+				AA28F193229D549B00D582E3 /* imageModal.swift in Sources */,
 				AA592C4E2270265100485910 /* DetailVC.swift in Sources */,
 				AA8F0920226B27010014C2C4 /* WelcomeScreenVC.swift in Sources */,
 				AA592C4B226EF2AE00485910 /* customTableCell.swift in Sources */,
@@ -319,6 +342,7 @@
 				AADAD73B226995C800717AC4 /* EmployeeListVC.swift in Sources */,
 				AA1DF0262297B1A300B582A3 /* SignUpVC.swift in Sources */,
 				AADAD7592269C1F200717AC4 /* LoginVC.swift in Sources */,
+				AA28F19D229E5BAC00D582E3 /* ImageCollectionViewCell.swift in Sources */,
 				AAF345712298537B0052E4E0 /* empList.swift in Sources */,
 				AADEFED02272EF000089E9A0 /* SignInView.swift in Sources */,
 				AA592C522270936F00485910 /* CustomSegment.swift in Sources */,
@@ -474,6 +498,7 @@
 			baseConfigurationReference = E4F95666888963B9A672CBE5 /* Pods-EndGame.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = EndGame/Info.plist;
@@ -495,6 +520,7 @@
 			baseConfigurationReference = 05F6738C6D4B4871636CAB75 /* Pods-EndGame.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = EndGame/Info.plist;
