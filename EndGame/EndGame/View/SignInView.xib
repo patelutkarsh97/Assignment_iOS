@@ -82,7 +82,7 @@
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="line" placeholder="Email" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="4cz-tA-AFd" customClass="HoshiTextField" customModule="TextFieldEffects">
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" text="atul.dube121231y@tothenew.com" borderStyle="line" placeholder="Email" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="4cz-tA-AFd" customClass="HoshiTextField" customModule="TextFieldEffects">
                     <rect key="frame" x="40" y="194" width="421" height="50"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="50" id="FGs-jc-hq2"/>

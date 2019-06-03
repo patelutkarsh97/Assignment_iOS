@@ -11,26 +11,19 @@ import MapKit
 import CoreLocation
 
 class MapVC: UIViewController {
-    var locationArray = {[]}
-    //let locationManager = CLLocationManager()
+//    var locationArray = {[]}
+    let locationManager = CLLocationManager()
+    let regionInMeters: Double = 10000
     @IBOutlet weak var mapView: MKMapView!
     override func viewDidLoad() {
         super.viewDidLoad()
         mapView.delegate = self
         let longTapGesture = UILongPressGestureRecognizer(target: self, action: #selector(longTap))
         mapView.addGestureRecognizer(longTapGesture)
-
-//     //   originalTopMargin = topMarginConstraint.constant
-//        // 2
-//        locationManager.delegate = self as? CLLocationManagerDelegate
-//        locationManager.requestWhenInUseAuthorization()
-//        // 3
-//        if CLLocationManager.locationServicesEnabled() {
-//            locationManager.desiredAccuracy = kCLLocationAccuracyHundredMeters
-//            locationManager.requestLocation()
-//        }
-        
+        checkLocationServices()
     }
+    
+    
     
     @objc func longTap(sender: UIGestureRecognizer){
         print("long tap")
@@ -46,7 +39,7 @@ class MapVC: UIViewController {
         let annotation = MKPointAnnotation()
         annotation.coordinate = location
         annotation.title = "User Name"
-        annotation.subtitle = "User Subtitle"
+       // annotation.subtitle = "User Subtitle"
         self.mapView.addAnnotation(annotation)
     }
     
@@ -91,4 +84,61 @@ extension MapVC: MKMapViewDelegate {
             }
         }
     }
+    
+    func checkLocationServices() {
+        if CLLocationManager.locationServicesEnabled() {
+            // setup our location manager
+            setupLocationManager()
+            checkLocationAuthorisation()
+        } else {
+            // show alert box
+        }
+    }
+    
+    func setupLocationManager() {
+        locationManager.delegate = self
+        locationManager.desiredAccuracy = kCLLocationAccuracyBest
+    }
+    
+    func checkLocationAuthorisation() {
+        switch CLLocationManager.authorizationStatus() {
+        case .authorizedWhenInUse:
+            mapView.showsUserLocation = true
+            centerViewOnUserLocation()
+            locationManager.startUpdatingLocation()
+            break
+        case .denied:
+            // Show alert how to turn on location persmission
+            break
+        case .notDetermined:
+            locationManager.requestWhenInUseAuthorization()
+        case .restricted:
+            // Show alert letting them know
+            break
+        case .authorizedAlways:
+            break
+        }
+    }
+    
+    func centerViewOnUserLocation() {
+        if let location = locationManager.location?.coordinate {
+            let region = MKCoordinateRegion.init(center: location, latitudinalMeters: regionInMeters, longitudinalMeters: regionInMeters)
+            mapView.setRegion(region, animated: true)
+        }
+    }
+}
+
+extension MapVC: CLLocationManagerDelegate {
+    
+    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        guard let location = locations.last else { return }
+        let center = CLLocationCoordinate2D(latitude: location.coordinate.latitude, longitude: location.coordinate.longitude)
+        let region = MKCoordinateRegion.init(center: center, latitudinalMeters: regionInMeters, longitudinalMeters: regionInMeters)
+        mapView.setRegion(region, animated: true)
+    }
+    
+    func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
+        checkLocationAuthorisation() 
+    }
+
 }

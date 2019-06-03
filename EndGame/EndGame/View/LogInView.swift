@@ -10,6 +10,7 @@ import UIKit
 
 class LogInView: UIView, UITextFieldDelegate {
 
+    @IBOutlet weak var forgotPasswordButton: UIButton!
     @IBOutlet weak var emailDisplayButton: UIButton!
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var validationImage: UIImageView!

@@ -19,25 +19,28 @@
                 <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
-                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mask" translatesAutoresizingMaskIntoConstraints="NO" id="YXH-v7-t7g">
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="YXH-v7-t7g">
                         <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                     </imageView>
+                    <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="dlL-h1-Es8">
+                        <rect key="frame" x="15" y="15" width="20" height="20"/>
+                    </activityIndicatorView>
                 </subviews>
             </view>
             <constraints>
                 <constraint firstItem="YXH-v7-t7g" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="2kk-gP-2EI"/>
+                <constraint firstItem="dlL-h1-Es8" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="8f9-ts-7Pk"/>
                 <constraint firstItem="YXH-v7-t7g" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="VsZ-v3-1B6"/>
                 <constraint firstAttribute="bottom" secondItem="YXH-v7-t7g" secondAttribute="bottom" id="cFw-1P-pJo"/>
+                <constraint firstItem="dlL-h1-Es8" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="e95-mp-jhG"/>
                 <constraint firstAttribute="trailing" secondItem="YXH-v7-t7g" secondAttribute="trailing" id="gY3-ui-Q9L"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
             <connections>
+                <outlet property="activityIndicator" destination="dlL-h1-Es8" id="bd5-lt-GyM"/>
                 <outlet property="image" destination="YXH-v7-t7g" id="c7s-BX-t8c"/>
             </connections>
             <point key="canvasLocation" x="47.826086956521742" y="35.491071428571423"/>
         </collectionViewCell>
     </objects>
-    <resources>
-        <image name="mask" width="96" height="96"/>
-    </resources>
 </document>

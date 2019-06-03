@@ -10,10 +10,14 @@ import UIKit
 
 class customCollectionCell: UICollectionViewCell {
 
+    @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     @IBOutlet weak var image: UIImageView!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
     }
-
+    func fetchImage(image: UIImage) {
+        self.image.image = image
+        self.activityIndicator.isHidden = true
+    }
 }
