@@ -46,7 +46,7 @@ class WelcomeScreenVC: UIViewController {
     }
     
     @objc func exitApp() {
-        Darwin.exit(0)
+        exit(0)
     }
 
     @objc func splash() {

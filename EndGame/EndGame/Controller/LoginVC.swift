@@ -69,6 +69,7 @@ class LoginVC: UIViewController,UITextFieldDelegate {
                             guard let codeResponseMessage = statusMessage["message"] as? String else {return}
                             print("=========================== \(codeResponseMessage)")
                             self.emailMessage = codeResponseMessage
+                            self.toastLabel.toast(message: self.emailMessage)
                         }
                     }
                 } catch {
@@ -79,7 +80,6 @@ class LoginVC: UIViewController,UITextFieldDelegate {
             }.resume()
         print(emailValidationCode)
         print(emailMessage)
-        
     }
 
 //    @IBAction func onClickNextButtonOfPasswordView(_ sender: Any) {

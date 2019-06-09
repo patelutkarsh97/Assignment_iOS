@@ -57,9 +57,7 @@ class welcomeUser: UIViewController, UIImagePickerControllerDelegate, UINavigati
     }
     
     @IBAction func onClickLogoutButton(_ sender: Any) {
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let contoller = storyboard.instantiateViewController(withIdentifier: "LoginVC")
-        self.navigationController?.popToViewController(contoller, animated: true)
+        self.navigationController?.popViewController(animated: true)
     }
     
 
