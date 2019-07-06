@@ -508,7 +508,7 @@
                                                         </constraints>
                                                     </view>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ksu-PA-yJU">
-                                                        <rect key="frame" x="164" y="391" width="86" height="40"/>
+                                                        <rect key="frame" x="199" y="391" width="16" height="40"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="40" id="jRr-cC-CpD"/>
                                                         </constraints>
@@ -534,7 +534,7 @@
                                                 </constraints>
                                             </view>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K84-Od-bRH">
-                                                <rect key="frame" x="164" y="590" width="86" height="40"/>
+                                                <rect key="frame" x="199" y="590" width="16" height="40"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="40" id="HPk-iL-h6m"/>
                                                 </constraints>
