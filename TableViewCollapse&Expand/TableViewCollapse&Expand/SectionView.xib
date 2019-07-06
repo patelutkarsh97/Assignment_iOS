@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Sky_Med.ttf">
+            <string>SkyTextMedium-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="UIView"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="SectionView" customModule="TableViewCollapse_Expand" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ArrowDown" translatesAutoresizingMaskIntoConstraints="NO" id="j1v-Qc-68K">
+                    <rect key="frame" x="343" y="17" width="12" height="12"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="12" id="0ca-0C-zK2"/>
+                        <constraint firstAttribute="height" constant="12" id="wAq-PT-ABm"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5iu-69-GD2">
+                    <rect key="frame" x="20" y="11" width="323" height="22"/>
+                    <fontDescription key="fontDescription" name="SkyTextMedium-Regular" family="Sky Text" pointSize="16"/>
+                    <color key="textColor" red="0.29019607843137252" green="0.29019607843137252" blue="0.29019607843137252" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="fIa-Gs-orm">
+                    <rect key="frame" x="371" y="0.0" width="4" height="44"/>
+                    <color key="backgroundColor" red="0.31372549020000001" green="0.52941176469999995" blue="0.78039215689999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="4" id="mp3-02-8yc"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0gL-XA-9LW">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                    <connections>
+                        <action selector="onTapSection:" destination="iN0-l3-epB" eventType="touchUpInside" id="WeL-he-IzT"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AeO-1o-jk5">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="1"/>
+                    <color key="backgroundColor" red="0.2901960784" green="0.2901960784" blue="0.2901960784" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="wbq-Vo-C5E"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="0gL-XA-9LW" secondAttribute="trailing" id="1Yl-ES-4Pv"/>
+                <constraint firstItem="0gL-XA-9LW" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="5W8-kG-f0l"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="5iu-69-GD2" secondAttribute="bottom" constant="11" id="D01-6q-aqQ"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="j1v-Qc-68K" secondAttribute="bottom" constant="15" id="LUI-at-AC9"/>
+                <constraint firstItem="5iu-69-GD2" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="QGb-i5-CIc"/>
+                <constraint firstAttribute="trailing" secondItem="j1v-Qc-68K" secondAttribute="trailing" constant="20" id="QTN-uL-JCr"/>
+                <constraint firstAttribute="trailing" secondItem="fIa-Gs-orm" secondAttribute="trailing" id="SwP-KZ-5y2"/>
+                <constraint firstItem="0gL-XA-9LW" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="TFt-66-v85"/>
+                <constraint firstAttribute="bottom" secondItem="fIa-Gs-orm" secondAttribute="bottom" id="TTA-MH-HS3"/>
+                <constraint firstAttribute="trailing" secondItem="AeO-1o-jk5" secondAttribute="trailing" id="eiY-Lr-3tq"/>
+                <constraint firstItem="fIa-Gs-orm" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="gsE-IP-NGY"/>
+                <constraint firstItem="5iu-69-GD2" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="11" id="lUQ-Ms-Ph6"/>
+                <constraint firstItem="AeO-1o-jk5" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="lVq-An-0c5"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="0gL-XA-9LW" secondAttribute="bottom" id="o9i-X2-w0V"/>
+                <constraint firstItem="j1v-Qc-68K" firstAttribute="leading" secondItem="5iu-69-GD2" secondAttribute="trailing" id="p1a-TK-faX"/>
+                <constraint firstItem="AeO-1o-jk5" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="ycm-rx-Av4"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="arrowImage" destination="j1v-Qc-68K" id="wOQ-8v-da9"/>
+                <outlet property="sectionButton" destination="0gL-XA-9LW" id="7E7-Us-TA9"/>
+                <outlet property="sectionLabel" destination="5iu-69-GD2" id="eIq-0j-Nej"/>
+                <outlet property="sideSelectionImageForiPad" destination="fIa-Gs-orm" id="OSL-WP-6L3"/>
+                <outlet property="topSeparationLine" destination="AeO-1o-jk5" id="PY9-3h-OlF"/>
+            </connections>
+            <point key="canvasLocation" x="53.600000000000001" y="187.1064467766117"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ArrowDown" width="50" height="50"/>
+    </resources>
+</document>
